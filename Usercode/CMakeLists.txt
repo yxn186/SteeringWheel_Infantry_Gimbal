@@ -2,6 +2,7 @@
 # Application source files
 set(USER_APP_SOURCES
     # App/App_Gimbal.cpp
+    Application/Gimbal_Task/Gimbal_Task.cpp
 )
 #此处用Set创建了名为USER_APP_SOURCES的变量 它表示“所有 App 层源文件”。
 # 以后真正创建文件后，例如创建了以下文件：
