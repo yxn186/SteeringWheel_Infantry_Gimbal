@@ -17,16 +17,16 @@ bool Global_Init_Finished = false;
 
 extern "C" void InitTask_Function(void *argument)
 {
-  /* init code for USB_DEVICE */
-  MX_USB_DEVICE_Init();
-  Global_Init_Finished = true;
-  /* USER CODE BEGIN InitTask_Function */
-  /* Infinite loop */
-  for(;;)
-  {
-    osThreadTerminate(osThreadGetId());
-  }
-  /* USER CODE END InitTask_Function */
+    /* init code for USB_DEVICE */
+    MX_USB_DEVICE_Init();
+    Global_Init_Finished = true;
+    /* USER CODE BEGIN InitTask_Function */
+    /* Infinite loop */
+    for(;;)
+    {
+        osThreadTerminate(osThreadGetId());
+    }
+    /* USER CODE END InitTask_Function */
 }
 
 
@@ -39,13 +39,13 @@ extern "C" void InitTask_Function(void *argument)
 /* USER CODE END Header_Main_Task_Function */
 extern "C" void Main_Task_Function(void *argument)
 {
-  /* USER CODE BEGIN Main_Task_Function */
+    /* USER CODE BEGIN Main_Task_Function */
 
-  /* Infinite loop */
-  for(;;)
-  {
+    /* Infinite loop */
+    for(;;)
+    {
 
-    osDelay(1);
-  }
-  /* USER CODE END Main_Task_Function */
+        osDelay(1);
+    }
+    /* USER CODE END Main_Task_Function */
 }
